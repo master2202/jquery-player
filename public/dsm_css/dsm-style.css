@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css?family=Electrolize|Titillium+Web');
+
+body {
+	background-color: black;
+	background-image: url("/./dsm_img/musicCover3.jpg");
+}
+
+/* DSM PLAYER */
+#dsmPlayer{
+	margin: auto;
+	background-color: transparent;
+	font-family: 'Electrolize', sans-serif;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	min-height: 193px;
+	height: auto;
+	
+}
+
+/* PLAYLIST PROPERTIES */
+#dsmPlayList {
+	background-color: rgb(26, 26, 26);
+	color: white;
+	border: 2px solid rgba(74,134,232,1);
+	border-radius: 10px;
+	padding: 5px;
+}
+
+#dsmPlayListTrack {
+	background-color: rgb(26, 26, 26);
+	color: white;
+	border-radius: 6px;
+	padding: 0;
+	overflow-y: auto;
+  	margin:0 -4px 0 -4px;
+}
+
+.dsmPLT_li  {
+	display: block;
+	padding :10px 15px;
+	background-color: rgb(26, 26, 26);
+	color: white;
+	border: 1px solid rgb(74,134,232);
+	border-radius: 6px;
+	margin: 1px;
+	padding-left: 8px;
+	font-size: 16px;
+}
+
+/*#dsmPlayListTrack li p{
+	margin: -28px 0 0 35px;
+}*/
+
+.active-list-track {
+	border:	1px solid rgb(0, 255, 255);
+}
+/* SONG ART PROPERTIES */
+#dsmSongArt {
+	color: white;
+	border: 2px solid rgba(74,134,232,1);
+	border-radius: 10px;
+	padding: 5px;
+	position: relative;
+	background-color: rgb(26, 26, 26);
+}
+
+#dsmCoverArt{
+	position: absolute;
+	border: 2px transparent;
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	top: 2px;
+	left: 3px;
+	background-color: rgb(26, 26, 26);
+	background-size:cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#dsmCoverTitle{
+	position: absolute;
+	top: 2px;
+	left: 198px;
+}
+
+/* CONTROL CONTAINER PROPERTIES */
+#dsmPlayerControl {
+	position: relative;
+	background-color: rgb(26, 26, 26);
+	color: white;
+	border: 2px solid rgba(74,134,232,1);
+	border-radius: 10px;
+	padding: 5px;
+	margin: 1px 1px 1px 1px;
+}
+
+/* DISPLAY PROPERTIES */
+#dsmDisplay{
+	position: relative;
+	width:210px;
+	height: auto;
+	margin-left: -3px;
+	padding: 0;
+	overflow: hidden;
+}
+
+#displayUp{
+	position: absolute;
+	left: 0;
+    top: 0;
+}
+
+#trackContent{
+	width: 185px;
+	height: 20px;
+	position: absolute;
+	top: 69px;
+	left: 12px;
+	text-align: left;
+}
+
+#trackContentIner{
+	overflow: hidden;
+	position: relative;
+	width: 185px;
+	height: 20px;
+}
+
+#trackName{
+	white-space: nowrap;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display:inline-block;
+	height: 20px;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+#trackTime{
+	width: 90px;
+    text-align: left;
+    position: absolute;
+    top: -20px;
+    left: 11px;
+    font-weight: normal;
+    font-size: 26px;
+}
+
+#trackDuration{
+	width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 16px;
+    left: 13px;
+	font-size: 17px;
+}
+
+#trackNumber {
+	width: 100%;
+    text-align: left;
+    position: absolute;
+    top: 35px;
+    left: 13px;
+	font-size: 17px;
+}
+
+#dsmVolumeBar{
+	position: absolute;
+	top: 18px;
+	left: 108px;
+}
+
+#dsmRepeatIndicator{
+	position: absolute;
+	top: 50px;
+	left: 85px;
+}
+
+#dsmCoverIndicator{
+	position: absolute;
+	top: 50px;
+	left: 130px;
+}
+
+#dsmPlayListIndicator{
+	position: absolute;
+	top: 50px;
+	left: 165px;
+}
+
+/* SIDEBAR ICONS PROPERTIES*/
+#dsmPlaylistIcon{
+	position: absolute;
+	top: 152px;
+	left: 225px;
+}
+
+#dsmPlaylistIcon:hover{
+	cursor: pointer;
+}
+
+#dsmCoverIcon{
+	position: absolute;
+	top: 115px;
+	left: 225px;
+}
+
+#dsmCoverIcon:hover{
+	cursor: pointer;
+}
+
+#dsmRepeatIcon{
+	position: absolute;
+	top: 77px;
+	left: 225px;
+}
+
+#dsmRepeatIcon:hover{
+	cursor: pointer;
+}
+
+#dsmVolMinusIcon{
+	position: absolute;
+	top: 44px;
+	left: 225px;
+}
+
+#dsmVolMinusIcon:hover{
+	cursor: pointer;
+}
+
+#dsmVolMinusIcon:active path{
+	fill: rgba(0,255,255, 1);
+}
+
+#dsmVolPlusIcon{
+	position: absolute;
+	top: 12px;
+	left: 225px;
+}
+
+#dsmVolPlusIcon:hover{
+	cursor: pointer;
+}
+
+#dsmVolPlusIcon:active path{
+	fill: rgba(0,255,255, 1);
+}
+
+/* RANGE SLIDER PROPERTIES */
+#dsmPlayerSliderTrack{
+	width: 202px;
+	height: auto;
+	border-radius: 10px;
+	padding-left: 3px;
+	padding-right: 0;
+	margin: 11px 0 11px 0;
+}
+
+.rangeslider{
+	background: rgb(74,134,232);
+}
+
+.rangeslider__handle {
+	background: url("../dsm_img/dsmSliderButton.svg");
+	border: none;
+	width: 25px;
+	height: 16px;
+}
+
+.rangeslider__handle:after {
+	background: transparent;
+	border: none;
+}
+
+.rangeslider--horizontal .rangeslider__handle {
+	top: -6px;
+}
+
+.rangeslider__handle:active, .rangeslider--active .rangeslider__handle {
+	background: url("../dsm_img/dsmSliderButton.svg");
+	border: none;
+}
+
+.rangeslider--horizontal {
+	height: 3px;
+}
+
+.rangeslider__fill {
+	background: rgba(0,255,255, 1);
+}
+
+/* MAIN CONTROL BUTTON PROPERTIES */
+#dsmButtonControl{
+	width: 210px;
+	margin-left: 6px;
+	margin-right: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#dsmBackward{
+	padding-top: 10px;
+}
+#dsmBackward:active #dsmBackwardup{
+	display: none;
+}
+
+#dsmForward{
+	padding-top: 10px;
+}
+#dsmForward:active #dsmForwardup{
+	display: none;
+}
+
+#dsmPlay{
+	padding-top: 5px;
+}
+#dsmPlay:active #dsmPlayup{
+	display: none;
+}
+
+#dsmPause{
+	padding-top: 5px;
+}
+#dsmPause:active #dsmPauseup{
+	display: none;
+}
+
+#dsmStop{
+	padding-top: 5px;
+}
+#dsmStop:active #dsmStopup{
+	display: none;
+}
+
+.dsmButton{
+	float: left;
+	cursor: pointer;
+	outline: none;
+	background-color: transparent;
+	border: none;
+	padding: 0 0 0 0;
+	margin-left: 3px;
+	height: 35px;
+	width: 35px;
+}
+
+.myFloat_left {
+	float: left;
+}
+
+ /*SCROLLBAR FOR TRACKLIST */
+	.dsm_ScrollBar::-webkit-scrollbar {
+	width: 11px;
+}
+
+	.dsm_ScrollBar::-webkit-scrollbar-track {
+	border-radius: 4px;
+}
+
+	.dsm_ScrollBar::-webkit-scrollbar-thumb {
+	border-radius: 4px;
+	background-color: rgba(74,134,232,1);
+}
